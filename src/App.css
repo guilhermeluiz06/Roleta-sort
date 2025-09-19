@@ -1,0 +1,80 @@
+/* src/App.css */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f02b2b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ponteiro {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #ffffff;
+  position: relative;
+  z-index: 10;
+  top: 35px;
+}
+
+.sorteador-container {
+  width: 90vw;
+  max-width: 600px;
+  height: 200px;
+  border: 5px solid #2c3e50;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel {
+  display: flex;
+  height: 100%;
+  /* A transição será controlada pelo React */
+}
+
+.participante {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.participante img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.botao-sortear {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.botao-sortear:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
