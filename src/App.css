@@ -1,4 +1,6 @@
 /* src/App.css */
+
+/* --- OS SEUS ESTILOS EXISTENTES --- */
 body {
   margin: 0;
   display: flex;
@@ -40,7 +42,6 @@ body {
 .carrossel {
   display: flex;
   height: 100%;
-  /* A transição será controlada pelo React */
 }
 
 .participante {
@@ -77,4 +78,57 @@ body {
 .botao-sortear:disabled {
   background-color: #bdc3c7;
   cursor: not-allowed;
+}
+
+/* --- ESTILOS ADICIONADOS PARA O POP-UP --- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 80%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* AQUI ESTÁ A SOLUÇÃO PARA A IMAGEM GRANDE */
+.winner-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  object-fit: cover; /* Evita que a imagem se estique/distorça */
+  margin: 10px auto; /* Centraliza e adiciona espaço */
 }
