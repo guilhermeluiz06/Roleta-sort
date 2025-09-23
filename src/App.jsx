@@ -12,7 +12,7 @@ const DADOS_PARTICIPANTES = [
   { id: 5, nome: "Douglas Oliveira", imagem: "/img/pessoa2.jpg" },
   { id: 6, nome: "Eduardo Euzébio", imagem: "/img/pessoa2.jpg" },
   { id: 7, nome: "Ewelly Santos", imagem: "/img/pessoa2.jpg" },
-  { id: 8, nome: "Mais Sorte na Próxima Vez", imagem: "/img/Sorte.png"},
+  { id: 8, nome: "parabéns RH", imagem: "/img/RH.png"},
   { id: 9, nome: "Giuliano Aaron", imagem: "/img/pessoa2.jpg" },
   { id: 10, nome: "Gustavo Henrique", imagem: "/img/pessoa2.jpg" },
   { id: 11, nome: "Ítalo Almeida", imagem: "/img/pessoa2.jpg" },
