@@ -15,6 +15,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; 
+  padding: 50px 0; 
+  min-height: 100vh;
 }
 
 .ponteiro {
@@ -30,8 +33,8 @@ body {
 
 .sorteador-container {
   width: 90vw;
-  max-width: 600px;
-  height: 200px;
+  max-width: 900px; /* Aumentado para aumentar a roleta */
+  height: 300px; /* Aumentado para aumentar a roleta */
   border: 5px solid #2c3e50;
   border-radius: 10px;
   overflow: hidden;
@@ -46,8 +49,8 @@ body {
 
 .participante {
   flex-shrink: 0;
-  width: 200px;
-  height: 200px;
+  width: 300px; /* Aumentado para caber na nova roleta */
+  height: 300px; /* Aumentado para caber na nova roleta */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,12 +126,17 @@ body {
   cursor: pointer;
 }
 
-/* AQUI ESTÁ A SOLUÇÃO PARA A IMAGEM GRANDE */
 .winner-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 5px solid #3498db;
-  object-fit: cover; /* Evita que a imagem se estique/distorça */
-  margin: 10px auto; /* Centraliza e adiciona espaço */
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+/* --- ESTILO PARA A LOGO --- */
+.logo {
+  width: 400px; 
+  margin-bottom: 20px;
 }

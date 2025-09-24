@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useMemo } from 'react';
 import './App.css';
 import Logo from './component/Logo';
@@ -12,7 +11,7 @@ const DADOS_PARTICIPANTES = [
   { id: 5, nome: "Douglas Oliveira", imagem: "/img/pessoa2.jpg" },
   { id: 6, nome: "Eduardo Euzébio", imagem: "/img/pessoa2.jpg" },
   { id: 7, nome: "Ewelly Santos", imagem: "/img/pessoa2.jpg" },
-  { id: 8, nome: "parabéns RH", imagem: "/img/RH.png"},
+  { id: 8, nome: "Parabéns RH", imagem: "/img/RH.png"},
   { id: 9, nome: "Giuliano Aaron", imagem: "/img/pessoa2.jpg" },
   { id: 10, nome: "Gustavo Henrique", imagem: "/img/pessoa2.jpg" },
   { id: 11, nome: "Ítalo Almeida", imagem: "/img/pessoa2.jpg" },
@@ -43,7 +42,8 @@ function App() {
   // Usa o useState para gerenciar a lista de IDs que ainda precisam ser sorteados.
   const [remainingForcedWinners, setRemainingForcedWinners] = useState([...FORCED_WINNER_IDS]);
 
-  const IMAGE_WIDTH = 200;
+  // Modificado de 200 para 300 para o novo tamanho das imagens
+  const IMAGE_WIDTH = 300; 
 
   const carrosselItems = useMemo(() => {
     return [...DADOS_PARTICIPANTES, ...DADOS_PARTICIPANTES, ...DADOS_PARTICIPANTES];
@@ -57,7 +57,6 @@ function App() {
     setWinner(null);
 
     let winnerIndex;
-
     // A LÓGICA DA "BATOTA" ACONTECE AQUI:
     // Se ainda houver IDs na lista de vencedores forçados, usamos o primeiro.
     if (remainingForcedWinners.length > 0) {
@@ -83,7 +82,8 @@ function App() {
     // O resto da lógica da animação continua igual
     const offsetInicial = DADOS_PARTICIPANTES.length * IMAGE_WIDTH;
     const posicaoVencedor = offsetInicial + (winnerIndex * IMAGE_WIDTH);
-    const correcaoDeCentralizacao = (600 / 2) - (IMAGE_WIDTH / 2);
+    // Modificado de 600 para 900 para o novo tamanho do contêiner da roleta
+    const correcaoDeCentralizacao = (900 / 2) - (IMAGE_WIDTH / 2);
     const voltasExtras = DADOS_PARTICIPANTES.length * IMAGE_WIDTH;
     const posicaoFinal = posicaoVencedor - correcaoDeCentralizacao + voltasExtras;
     setTransformStyle({
