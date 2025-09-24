@@ -5,10 +5,10 @@ import Logo from './component/Logo';
 
 // --- DADOS DOS PARTICIPANTES ---
 const DADOS_PARTICIPANTES = [
-  { id: 1, nome: "Ana Silva",    imagem: "/img/pessoa1.jpg" },
-  { id: 2, nome: "Bruno Costa",  imagem: "/img/pessoa2.jpg" },
-  { id: 3, nome: "Carla Dias",   imagem: "/img/pessoa2.jpg" },
-  { id: 4, nome: "Daniel Matos", imagem: "/img/pessoa2.jpg" },
+  { id: 1, nome: "Ester Horrany",    imagem: "/img/ester.jpg" },
+  { id: 2, nome: "Eduardo Euzébio",  imagem: "/img/eduardo.jpg" },
+  { id: 3, nome: "Leticia da Silva",   imagem: "/img/leticia.jpg" },
+  { id: 4, nome: "Fernando Roberto", imagem: "/img/fernando.jpg" },
   { id: 5, nome: "Douglas Oliveira", imagem: "/img/pessoa2.jpg" },
   { id: 6, nome: "Eduardo Euzébio", imagem: "/img/pessoa2.jpg" },
   { id: 7, nome: "Ewelly Santos", imagem: "/img/pessoa2.jpg" },
