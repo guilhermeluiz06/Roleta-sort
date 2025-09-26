@@ -18,11 +18,11 @@ const DADOS_PARTICIPANTES = [
     { id: 12, nome: "Joao Marcelo", imagem: "/img/joao marcelo.jpg" },
     { id: 13, nome: "Efraim Ferreira", imagem: "/img/efraim ferreira.jpg" },
     { id: 14, nome: "Mais Sorte na Próxima Vez", imagem: "/img/Sorte.png" },
-    { id: 15, nome: "Manuela Viana", imagem: "/img/pessoa2.jpg" },
+    { id: 15, nome: "Douglas", imagem: "/img/Douglas.jpg" },
     { id: 16, nome: "Marisa Leal", imagem: "/img/pessoa2.jpg" },
-    { id: 17, nome: "Matheus Rodrigues", imagem: "/img/pessoa2.jpg" },
-    { id: 18, nome: "Natalie Rego", imagem: "/img/pessoa2.jpg" },
-    { id: 19, nome: "Thaina Carolline", imagem: "/img/pessoa2.jpg" },
+    { id: 17, nome: "Matheus Rodrigues", imagem: "/img/Matheus.jpg" },
+    { id: 18, nome: "Nataliede Rego", imagem: "/img/pessoa2.jpg" },
+    { id: 19, nome: "Thaina Carolline", imagem: "/img/thaina carolline.jpg" },
     { id: 20, nome: "Yuliany Banegas", imagem: "/img/pessoa2.jpg" },
     { id: 21, nome: "Mais Sorte na Próxima Vez", imagem: "/img/Sorte.png" }, // O nosso vencedor forçado
     // ... pode adicionar mais participantes aqui
