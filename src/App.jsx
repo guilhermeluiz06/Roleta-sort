@@ -10,7 +10,7 @@ const DADOS_PARTICIPANTES = [
     { id: 4, nome: "Fernando Roberto", imagem: "/img/fernando.jpg" },
     { id: 5, nome: "Marisa Leal", imagem: "/img/marisa.jpg" },
     { id: 6, nome: "Ewelly Santos", imagem: "/img/ewelly.jpg" },
-    { id: 7, nome: "Ewedsdda", imagem: "/img/pessoa2.jpg" },
+    { id: 7, nome: "Pedrus", imagem: "/img/petrus.jpg" },
     { id: 8, nome: "Parabéns RH", imagem: "/img/RH.png" },
     { id: 9, nome: "Giuliano Aaron", imagem: "/img/pessoa2.jpg" },
     { id: 10, nome: "Gustavo Henrique", imagem: "/img/pessoa2.jpg" },
